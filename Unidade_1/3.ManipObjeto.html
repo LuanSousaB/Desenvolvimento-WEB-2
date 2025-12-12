@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulação de Objeto</title>
+  </head>
+  <body>
+    <h1>Abra o console (F12) para ver os resultados.</h1>
+
+    <script>
+      const carro = {
+        marca: "Fiat",
+        modelo: "Uno",
+        ano: 1995,
+
+        exibirInfo: function () {
+          console.log(
+            `Marca: ${this.marca} | Modelo: ${this.modelo} | Ano: ${this.ano}`
+          );
+        },
+      };
+
+      console.log("--- Estado Inicial do Objeto ---");
+      // a) Chamar o método exibirInfo()
+      carro.exibirInfo();
+
+      // b) Adicionar dinamicamente uma nova propriedade 'cor'
+      carro.cor = "Preto";
+
+      // c) Atualizar o valor de 'ano' para o ano atual (2025)
+      carro.ano = 2025;
+
+      console.log("--- Estado Final do Objeto ---");
+      // d) Exibir o objeto completo
+      console.log(carro);
+    </script>
+  </body>
+</html>

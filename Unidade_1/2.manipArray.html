@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulação de Array</title>
+  </head>
+  <body>
+    <h1>Abra o console (F12) para ver os resultados.</h1>
+
+    <script>
+      const numeros = [8, 2, 15, 4, 10, 1, 7];
+
+      console.log("Array Original:", numeros);
+
+      // a) Exibir o maior e o menor valor do array
+      const maiorValor = Math.max(...numeros);
+      const menorValor = Math.min(...numeros);
+
+      console.log("--- Parte A (Min/Max) ---");
+      console.log("Maior valor do array:", maiorValor);
+      console.log("Menor valor do array:", menorValor);
+
+      // b) Criar novo array 'dobro' usando map()
+      const dobro = numeros.map(function (numero) {
+        return numero * 2;
+      });
+
+      console.log("--- Parte B (map) ---");
+      console.log("Array Dobro:", dobro);
+
+      // c) Filtrar maiores que 5 usando filter()
+      const maioresQueCinco = numeros.filter(function (numero) {
+        return numero > 5;
+      });
+
+      console.log("--- Parte C (filter) ---");
+      console.log("Números Maiores que 5:", maioresQueCinco);
+    </script>
+  </body>
+</html>
