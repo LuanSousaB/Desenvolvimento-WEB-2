@@ -9,11 +9,11 @@ const palavra = palavraOriginal.toLowerCase().trim();
 if (palavra.length === 0) {
   console.log("Por favor, informe uma palavra válida.");
 } else {
-  // a) Exibir a quantidade de caracteres
+
   console.log(`\nA palavra informada é: "${palavraOriginal}"`);
   console.log(`Quantidade de caracteres: ${palavra.length}`);
 
-  // b) Verificar palíndromo
+
   const palavraInvertida = palavra.split("").reverse().join("");
 
   console.log(`Palavra invertida: ${palavraInvertida}`);
@@ -24,3 +24,4 @@ if (palavra.length === 0) {
     console.log("\nNão é um palíndromo.");
   }
 }
+
